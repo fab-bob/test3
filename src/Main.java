@@ -12,7 +12,7 @@ public class Main {
         //System.out.println(data.format(DateTimeFormatter.ofPattern("dd MMMM yyyy")));
     }
     public static String getDateInACertainFormat(String text) {
-        OffsetDateTime data = OffsetDateTime.parse("2023-03-01T13:00:00Z");
+        OffsetDateTime data = OffsetDateTime.parse(text);
         return (data.format(DateTimeFormatter.ofPattern("dd MMMM yyyy")));
     }
 }
